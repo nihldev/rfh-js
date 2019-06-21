@@ -21,9 +21,6 @@
   },
   "homepage": "https://github.com/nilh/rfh-js#readme",
   "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/preset-typescript": "^7.3.3",
     "@typescript-eslint/parser": "^1.10.2",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.3.0",
