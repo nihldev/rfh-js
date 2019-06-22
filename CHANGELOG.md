@@ -1,4 +1,4 @@
-# 0.2.0
+# 0.2.1 (June 22, 2019)
 
 - Added `CHANGELOG.md` file.
 - CI/CD pipeline.
