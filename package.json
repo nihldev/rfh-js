@@ -4,8 +4,8 @@
   "description": "Library for rfh's javascript applications",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "bundle": " parcel build src/index.ts && cp README.md LICENSE package.json dist &&npm i --only=production"
+    "test": "npm audit && node_modules/prettier/bin-prettier.js -c src/**/*.{js,jsx,ts,tsx}",
+    "bundle": "parcel build src/index.ts && npm i --only=production"
   },
   "repository": {
     "type": "git",
