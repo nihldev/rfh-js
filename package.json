@@ -1,10 +1,11 @@
 {
-  "name": "rfh-js",
+  "name": "@nilh/rfh",
   "version": "0.1.0",
   "description": "Library for rfh's javascript applications",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": " parcel build src/index.ts && cp README.md LICENSE package.json dist &&npm i --only=production"
   },
   "repository": {
     "type": "git",
@@ -12,14 +13,20 @@
   },
   "keywords": [
     "react",
-    "components"
+    "reactjs",
+    "components",
+    "react-component",
+    "firebase"
   ],
-  "author": "nilh",
+  "author": {
+    "name": "nilh",
+    "email": "jd@nilh.dev"
+  },
   "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/nilh/rfh-js/issues"
   },
-  "homepage": "https://github.com/nilh/rfh-js#readme",
+  "homepage": "https://github.com/nilh/rfh-js",
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
@@ -37,6 +44,13 @@
     "eslint-plugin-react": "^7.13.0",
     "eslint-plugin-standard": "^4.0.0",
     "parcel-bundler": "^1.12.3",
-    "prettier": "^1.17.1"
+    "prettier": "^1.17.1",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "typescript": "^3.5.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
   }
 }
