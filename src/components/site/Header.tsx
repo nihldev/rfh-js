@@ -1,7 +1,5 @@
 import React, { FunctionalComponent } from "react";
 
-import "../assets/styles/components/Menu.css";
-
 const MenuOptions: FunctionalComponent = () => {
   return (
     <div className="menu">

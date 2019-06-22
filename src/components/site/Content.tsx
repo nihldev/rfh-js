@@ -1,7 +1,5 @@
 import React, { FunctionalComponent } from "react";
 
-import "../assets/styles/components/Content.css";
-
 const Content: FunctionalComponent = () => {
   return (
     <section className="content">

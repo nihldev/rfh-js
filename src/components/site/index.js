@@ -1,4 +1,9 @@
-export { default as Contact } from "./Contact";
-export { default as Content } from "./Content";
-export { default as Footer } from "./Footer";
-export { default as Header } from "./Header";
+import Contact from "./Contact";
+import Content from "./Content";
+import Footer from "./Footer";
+import Header from "./Header";
+
+exports.Contact = Contact;
+exports.Content = Content;
+exports.Footer = Footer;
+exports.Header = Header;

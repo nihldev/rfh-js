@@ -4,7 +4,8 @@
   "description": "Library for rfh's javascript applications",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": " parcel build src/index.js && cp README.md LICENSE package.json dist &&npm i --only=production"
   },
   "repository": {
     "type": "git",

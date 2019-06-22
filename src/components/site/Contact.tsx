@@ -1,7 +1,5 @@
 import React, { FunctionalComponent } from "react";
 
-import "../assets/styles/components/Contact.css";
-
 const mapStyle = {
   border: 0
 };

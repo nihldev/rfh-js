@@ -1,7 +1,5 @@
 import React, { FunctionalComponent } from "react";
 
-import "../assets/styles/components/Footer.css";
-
 const Footer: FunctionalComponent = () => {
   return (
     <footer>
