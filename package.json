@@ -1,5 +1,5 @@
 {
-  "name": "rfh",
+  "name": "@nilh/rfh",
   "version": "0.1.0",
   "description": "Library for rfh's javascript applications",
   "main": "dist/index.js",
@@ -13,14 +13,20 @@
   },
   "keywords": [
     "react",
-    "components"
+    "reactjs",
+    "components",
+    "react-component",
+    "firebase"
   ],
-  "author": "nilh",
+  "author": {
+    "name": "nilh",
+    "email": "jd@nilh.dev"
+  },
   "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/nilh/rfh-js/issues"
   },
-  "homepage": "https://github.com/nilh/rfh-js#readme",
+  "homepage": "https://github.com/nilh/rfh-js",
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
