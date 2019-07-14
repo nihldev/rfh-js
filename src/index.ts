@@ -1,1 +1,1 @@
-export { Site, Contact, Content, Footer, Header } from "./components";
+export { Site, Contact, Content, Footer, Header } from "./components/index";

@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "npm audit && node_modules/prettier/bin-prettier.js -c src/**/*.{js,jsx,ts,tsx}",
-    "bundle": "parcel build src/index.ts && npm i --only=production"
+    "bundle": "npm i --only=production && parcel build src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -32,6 +32,7 @@
     "@babel/core": "latest",
     "@babel/preset-react": "latest",
     "@babel/preset-typescript": "latest",
+    "@types/css": "0.0.31",
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "@typescript-eslint/parser": "latest",
