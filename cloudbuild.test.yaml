@@ -7,6 +7,6 @@ steps:
     secretEnv: ['NPM_TOKEN']
 
 secrets:
-- kmsKeyName: projects/rfh-production/locations/global/keyRings/ci/cryptoKeys/NPM_TOKEN
+- kmsKeyName: projects/rfh-prod/locations/global/keyRings/ci/cryptoKeys/NPM_TOKEN
   secretEnv:
     NPM_TOKEN: CiQAdaIEJ31IxPcFfOQklXlVvyEBa+hRtFFJ8ynfqlTX+4imQlASUQCBAGErS3SRBfY+OgwPu2fTR/TqTkCftmh9qhOcWYZozRbs/k3HArzQpDaHYrMaIEi7wyjnF0Er4W7libuub9e7eN+1l5OIbjyIZbevxZYvRw==
