@@ -1,6 +1,6 @@
-import React, { FunctionalComponent } from "react";
+import React from "react";
 
-const MenuOptions: FunctionalComponent = () => {
+const MenuOptions = (): JSX.Element => {
   return (
     <div className="menu">
       <input type="checkbox" name="toggle" id="toggle" className="toggle" />
@@ -26,7 +26,7 @@ const MenuOptions: FunctionalComponent = () => {
   );
 };
 
-const Menu: FunctionalComponent = () => {
+const Menu = (): JSX.Element => {
   return (
     <nav>
       <div className="wrap">
@@ -37,7 +37,7 @@ const Menu: FunctionalComponent = () => {
   );
 };
 
-const Jumbotron: FunctionalComponent = () => {
+const Jumbotron = (): JSX.Element => {
   return (
     <div className="slogan">
       <h2>Dale un segundo aire</h2>
@@ -46,7 +46,7 @@ const Jumbotron: FunctionalComponent = () => {
   );
 };
 
-const Header: FunctionalComponent = () => {
+export default (): JSX.Element => {
   return (
     <section id="inicio" className="inicio">
       <div>
@@ -56,5 +56,3 @@ const Header: FunctionalComponent = () => {
     </section>
   );
 };
-
-export default Header;

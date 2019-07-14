@@ -2,8 +2,15 @@
   "compilerOptions": {
     "jsx": "react",
     "paths": {
-      "~*": ["./*"]
-    }
-  },
-  "include": ["src/**/*"]
+      "~*": ["src/**/*"]
+    },
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es5",
+    "strict": true,
+    "noEmit": true,
+    "noErrorTruncation": true,
+    "allowJs": true,
+    "checkJs": true
+  }
 }

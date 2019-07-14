@@ -1,6 +1,6 @@
-import React, { FunctionalComponent } from "react";
+import React from "react";
 
-const Footer: FunctionalComponent = () => {
+export default (): JSX.Element => {
   return (
     <footer>
       <div>
@@ -9,5 +9,3 @@ const Footer: FunctionalComponent = () => {
     </footer>
   );
 };
-
-export default Footer;

@@ -1,10 +1,10 @@
-import React, { FunctionalComponent } from "react";
+import React from "react";
 
 const mapStyle = {
   border: 0
 };
 
-const CancunMap: FunctionalComponent = () => {
+const CancunMap = (): JSX.Element => {
   return (
     <article className="tab">
       <p>Av. Torcasita Mza. 3 Lote 41 Local 4 Supermanzana 66</p>
@@ -29,7 +29,7 @@ const CancunMap: FunctionalComponent = () => {
   );
 };
 
-const MeridaMap: FunctionalComponent = () => {
+const MeridaMap = (): JSX.Element => {
   return (
     <article className="tab">
       <p>Av. Cupules No.96D entre calle 10 y calle 12 col. García Ginerés</p>
@@ -54,7 +54,7 @@ const MeridaMap: FunctionalComponent = () => {
   );
 };
 
-const Contact: FunctionalComponent = () => {
+export default (): JSX.Element => {
   return (
     <section id="contacto" className="tab-area tabs-target">
       <span className="target-fix" id="tabC"></span>
@@ -70,5 +70,3 @@ const Contact: FunctionalComponent = () => {
     </section>
   );
 };
-
-export default Contact;

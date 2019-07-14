@@ -1,6 +1,6 @@
-import React, { FunctionalComponent } from "react";
+import React from "react";
 
-const Content: FunctionalComponent = () => {
+export default (): JSX.Element => {
   return (
     <section className="content">
       <div className="izquierda"></div>
@@ -45,5 +45,3 @@ const Content: FunctionalComponent = () => {
     </section>
   );
 };
-
-export default Content;

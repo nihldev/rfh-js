@@ -1,20 +1,27 @@
-import React, { FunctionalComponent } from "react";
+import React from "react";
 
 import Contact from "./Contact";
 import Content from "./Content";
 import Footer from "./Footer";
 import Header from "./Header";
 
-const Site: FunctionalComponent = () => {
+interface SiteComponents {
+  Header: JSX.Element;
+  Content: JSX.Element;
+  Contact: JSX.Element;
+  Footer: JSX.Element;
+}
+
+const Site = (): JSX.Element => {
   return (
-    <div>
+    <React.Fragment>
       <Header />
       <Content />
       <Contact />
       <Footer />
-    </div>
+    </React.Fragment>
   );
 };
 
 export default Site;
-export { Contact, Content, Footer, Header };
+export { Site, Header, Content, Contact, Footer };
