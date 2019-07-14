@@ -1,12 +1,5 @@
 steps:
   - name: 'gcr.io/cloud-builders/npm'
     args: ['i', '-D']
-    secretEnv: ['NPM_TOKEN']
   - name: 'gcr.io/cloud-builders/npm'
     args: ['run', 'test']
-    secretEnv: ['NPM_TOKEN']
-
-secrets:
-- kmsKeyName: projects/rfh-production/locations/global/keyRings/npm-ci/cryptoKeys/token
-  secretEnv:
-    NPM_TOKEN: CiQAL2dqB3M0z+oXd3rJfP3pX4Vc6MQKqL3U+qhnXGjdd8IqRu0STQC++LMBa0gaPh7ZC/o4Xb8nvTuz8BrG8YKip3XeQslyB7wD2AOZ8RRwW2I1YVEdf/SA7Rm2WSz0Lii9IRGsFBdnFpgSBf0eKQSn8OsI
