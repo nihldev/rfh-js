@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "types": "types/index.d.ts",
   "scripts": {
-    "test": "npm audit && node_modules/prettierwbin-prettier.js -c src/**/*.{js,jsx,ts,tsx}",
-    "bundle": "npm ci -D && tsc"
+    "test": "npm ci && npm audit && node_modules/prettier/bin-prettier.js -c src/**/*.{js,jsx,ts,tsx}",
+    "bundle": "tsc"
   },
   "repository": {
     "type": "git",
