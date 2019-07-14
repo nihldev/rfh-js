@@ -1,16 +1,14 @@
 steps:
   - name: 'gcr.io/cloud-builders/npm'
     args: ['ci']
-    secretEnv: ['NPM_TOKEN']
   - name: 'gcr.io/cloud-builders/npm'
     args: ['run', 'test']
-    secretEnv: ['NPM_TOKEN']
   - name: 'gcr.io/cloud-builders/npm'
     args: ['run', 'bundle']
     env: ['NODE_ENV=production']
-    secretEnv: ['NPM_TOKEN']
   - name: 'gcr.io/cloud-builders/npm'
     args: ['publish']
+    env: ['NPM_CONFIG_USERCONFIG=./npmrc']
     secretEnv: ['NPM_TOKEN']
 
 secrets:
