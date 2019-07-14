@@ -1,15 +1,21 @@
 {
   "compilerOptions": {
+    "outDir": "dist",
     "jsx": "react",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "target": "es6",
     "strict": true,
-    "noEmit": true,
+
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "noErrorTruncation": true,
     "declaration": true,
     "declarationDir": "types",
     "moduleResolution": "node"
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*.tsx", "src/**/*.ts"],
+  "exclude": ["node_modules"]
 }

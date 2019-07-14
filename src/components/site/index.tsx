@@ -5,13 +5,6 @@ import Content from "./Content";
 import Footer from "./Footer";
 import Header from "./Header";
 
-interface SiteComponents {
-  Header: JSX.Element;
-  Content: JSX.Element;
-  Contact: JSX.Element;
-  Footer: JSX.Element;
-}
-
 const Site = (): JSX.Element => {
   return (
     <React.Fragment>
@@ -24,4 +17,4 @@ const Site = (): JSX.Element => {
 };
 
 export default Site;
-export { Site, Header, Content, Contact, Footer };
+export { Header, Content, Contact, Footer };

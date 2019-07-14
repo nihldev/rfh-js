@@ -1,12 +1,12 @@
 {
   "name": "@nilh/rfh",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Library for rfh's javascript applications",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "types/index.d.ts",
   "scripts": {
-    "test": "npm audit && node_modules/prettier/bin-prettier.js -c src/**/*.{js,jsx,ts,tsx}",
-    "bundle": "npm i --only=production && parcel build src/index.ts"
+    "test": "npm audit && node_modules/prettierwbin-prettier.js -c src/**/*.{js,jsx,ts,tsx}",
+    "bundle": "npm ci && tsc"
   },
   "repository": {
     "type": "git",
@@ -48,8 +48,6 @@
     "eslint-plugin-promise": "latest",
     "eslint-plugin-react": "latest",
     "eslint-plugin-standard": "latest",
-    "parcel-bundler": "latest",
-    "parcel-plugin-static-files-copy": "latest",
     "prettier": "latest",
     "react": "latest",
     "react-dom": "latest",
@@ -113,5 +111,6 @@
         "version": "detect"
       }
     }
-  }
+  },
+  "dependencies": {}
 }
