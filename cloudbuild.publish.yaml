@@ -1,4 +1,16 @@
 steps:
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      - kms
+      - decrypt
+      - --ciphertext-file=.npmrc.enc
+      - --plaintext-file=/root/.npmrc
+      - --location=global
+      - --keyring=ci
+      - --key=NPM_TOKEN
+    volumes:
+      - name: 'home'
+        path: /root/
   - name: 'gcr.io/cloud-builders/npm'
     args: ['ci']
   - name: 'gcr.io/cloud-builders/npm'
@@ -8,10 +20,7 @@ steps:
     env: ['NODE_ENV=production']
   - name: 'gcr.io/cloud-builders/npm'
     args: ['publish']
-    env: ['NPM_CONFIG_USERCONFIG=./npmrc']
-    secretEnv: ['NPM_TOKEN']
-
-secrets:
-- kmsKeyName: projects/rfh-prod/locations/global/keyRings/ci/cryptoKeys/NPM_TOKEN
-  secretEnv:
-    NPM_TOKEN: CiQAdaIEJ31IxPcFfOQklXlVvyEBa+hRtFFJ8ynfqlTX+4imQlASUQCBAGErS3SRBfY+OgwPu2fTR/TqTkCftmh9qhOcWYZozRbs/k3HArzQpDaHYrMaIEi7wyjnF0Er4W7libuub9e7eN+1l5OIbjyIZbevxZYvRw==
+    env: ['HOME=/root/']
+    volumes:
+      - name: 'home'
+        path: /root/
