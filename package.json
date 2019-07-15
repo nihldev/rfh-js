@@ -1,6 +1,6 @@
 {
   "name": "@nilh/rfh",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Library for rfh's javascript applications",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
