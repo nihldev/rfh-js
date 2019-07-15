@@ -1,5 +1,12 @@
 {
   "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "~*": [
+        "components/site",
+        "component/site/*"
+      ]
+    },
     "outDir": "dist",
     "jsx": "react",
     "esModuleInterop": true,
