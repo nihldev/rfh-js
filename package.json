@@ -1,6 +1,6 @@
 {
   "name": "@nilh/rfh",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "Library for rfh's javascript applications",
   "scripts": {
     "test": "npm ci && npm audit && node_modules/prettier/bin-prettier.js -c src/**/*.{js,jsx,ts,tsx}",
@@ -27,10 +27,7 @@
   },
   "homepage": "https://github.com/nilh/rfh-js",
   "devDependencies": {
-    "@babel/core": "latest",
-    "@babel/preset-react": "latest",
-    "@babel/preset-typescript": "latest",
-    "@types/css": "0.0.31",
+    "@types/css": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "@typescript-eslint/parser": "latest",
@@ -52,8 +49,8 @@
     "typescript": "latest"
   },
   "peerDependencies": {
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react": "^16.8",
+    "react-dom": "^16.8"
   },
   "publishConfig": {
     "access": "public"
