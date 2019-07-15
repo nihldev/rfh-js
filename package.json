@@ -1,6 +1,6 @@
 {
   "name": "@nilh/rfh",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Library for rfh's javascript applications",
   "scripts": {
     "test": "npm ci && npm audit && node_modules/prettier/bin-prettier.js -c src/**/*.{js,jsx,ts,tsx}",
