@@ -49,8 +49,8 @@
     "typescript": "latest"
   },
   "peerDependencies": {
-    "react": "^16.8",
-    "react-dom": "^16.8"
+    "react": "^16.9",
+    "react-dom": "^16.9"
   },
   "publishConfig": {
     "access": "public"
@@ -107,5 +107,7 @@
       }
     }
   },
-  "dependencies": {}
+  "dependencies": {
+    "eslint-utils": "^1.4.2"
+  }
 }
